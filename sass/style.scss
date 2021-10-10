@@ -1,0 +1,168 @@
+@import 'config';
+
+body{
+    gap: 7em;
+    // overflow-x: hidden !important;
+}
+
+nav{
+    z-index: 3;
+
+    .navbar-brand{
+        margin-right: 3em;
+    }
+    .navbar-nav{
+        gap: 1.5em;
+
+        .nav-link{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            font-size: Max(1.2rem, 1vw);
+
+    
+            color: $white;
+            i{
+                font-size: .8vw;
+            }
+        }
+        .nav-link:hover,
+        .nav-link:focus{
+            color: $white;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .dropdown-menu{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            font-size: Max(1rem, .8vw);
+            
+            .dropdown-item{
+                transition: all .2s ease-in-out;
+            }
+            li:hover > .dropdown-item{
+                font-weight: 700;
+                background: none;
+            }
+        }
+        #nav-signup{
+            background: $white;
+            color: $primary;
+            padding: .8em 2em;
+            font-weight: 700;
+
+            &:hover{
+                background: $primary-light;
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+
+.content-title{
+    margin-bottom: 1em;
+}
+
+main{
+    background: linear-gradient(277.5deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    border-bottom-left-radius: 7em;
+    color: $white;
+
+    .container{
+        z-index: 2;
+        height: 90vh;
+    }
+    
+    .heading-cta{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: Max(1rem, .8vw);
+
+        #start-btn{
+            background: $white;
+            color: $primary;
+            padding: .8em 2em;
+    
+            &:hover{
+                background: $primary-light;
+                color: $white;
+            }
+        }
+        #learn-btn{
+            border: 1px solid $white;
+            color: $white;
+            padding: .8em 2em;
+    
+            &:hover{
+                background: $primary-light;
+                color: $white;
+            }
+        }
+    }
+
+    .main-image-bg{
+        z-index: 1;
+    }
+}
+
+.section-title{
+    // transform: translateY(-2em);
+}
+
+.features-one,
+.features-three{
+    //padding: 8em 0;
+    height: 100vh;
+
+    article{
+        gap: 10vh;
+    }
+
+    #image{
+        //right: -13%;
+        //transform: translate(100%, -50%);
+        width: calc(100% + 35vw);
+    }
+}
+
+.features-two{
+    background: linear-gradient(85.13deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 7em;
+    color: $white;
+    
+    .container{
+        //height: 500px;
+        z-index: 2;
+        padding: 7em 0;
+    }
+
+    .section-img-bg{
+        z-index: 1;
+        
+        img{
+            top: 0;
+            transform: translate(-30%, -50%);
+        }
+    }
+}
+
+footer{
+    background: $alt-darker;
+    border-top-right-radius: 7em;
+    color: $white;
+
+    .container{
+        padding: 5em 0;
+    }
+
+    ul li {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: Max(1rem, .8vw);
+
+
+        color: $alt;
+    }
+}

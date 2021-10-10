@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+//font-family: 'Overpass', sans-serif;
+//font-family: 'Ubuntu', sans-serif;
+
+$primary : hsl(356, 100%, 66%); //(CTA text)
+$primary-light: hsl(355, 100%, 74%); // (CTA hover background)
+$secondary-dark : hsl(208, 49%, 24%); //(headings)
+
+$white : hsl(0, 0%, 100%); //(text)
+$alt : hsl(240, 2%, 79%); //(footer text)
+$alt-dark : hsl(207, 13%, 34%); //(body copy)
+$alt-darker : hsl(240, 10%, 16%); //(footer background)
+
+img{
+    object-fit: cover;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;   
+}
+
+//typography
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: Max(2rem, 4vw);
+}
+h2{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: Max(1.8rem, 2.5vw);
+}
+h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: Max(1.8rem, 1.5vw);
+}
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: Max(1.2rem, .9vw);
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: Max(1rem, .9vw);
+    line-height: 2em;
+}
