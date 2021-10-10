@@ -17,7 +17,7 @@
 <body class="d-grid position-relative">
 
     <section class="header" id="header"> 
-        <nav class="navbar navbar-expand-lg position-absolute w-100 position-relative py-5" id="nav-bar">
+        <nav class="navbar navbar-expand-lg position-absolute w-100 position-fixed py-5" id="nav-bar">
             <div class="container">
                 <div class="navbar-brand">
                     <img src="images/logo.svg" alt="">
@@ -27,55 +27,34 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbar-target" >
                     <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item dropdown">
-                            <a href="#feature-one" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                Product
-                                <i class="fas fa-chevron-down ms-2"></i>
+                        <li class="nav-item">
+                            <a href="#feature-one" class="nav-link" role="button">
+                                Features
                             </a>
-                            <ul class="dropdown-menu  py-4 px-2">
-                                <li><a href="" class="dropdown-item">Overview</a></li>
-                                <li><a href="" class="dropdown-item">Pricing</a></li>
-                                <li><a href="" class="dropdown-item">Marketplace</a></li>
-                                <li><a href="" class="dropdown-item">Features</a></li>
-                                <li><a href="" class="dropdown-item">Integrations</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                Company
-                                <i class="fas fa-chevron-down ms-2"></i>
+                        <li class="nav-item">
+                            <a href="#demo" class="nav-link" role="button">
+                                Demo
                             </a>
-                            <ul class="dropdown-menu  py-4 px-2">
-                                <li><a href="" class="dropdown-item">About</a></li>
-                                <li><a href="" class="dropdown-item">Team</a></li>
-                                <li><a href="" class="dropdown-item">Blog</a></li>
-                                <li><a href="" class="dropdown-item">Careers</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                Connect
-                                <i class="fas fa-chevron-down ms-2"></i>
+                        <li class="nav-item">
+                            <a href="#register" class="nav-link" role="button">
+                                Register
                             </a>
-                            <ul class="dropdown-menu py-4 px-2">
-                                <li><a href="" class="dropdown-item">Contact</a></li>
-                                <li><a href="" class="dropdown-item">Newsletter</a></li>
-                                <li><a href="" class="dropdown-item">LinkedIn</a></li>
-                            </ul>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Login</a>
+                            <a href="#main" class="nav-link">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link rounded-pill" id="nav-signup">Sign Up</a>
+                            <a href="#main" class="nav-link rounded-pill" id="nav-signup">Sign Up</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main class="hero position-relative">
+        <main class="hero position-relative" id="main">
             <div class="container position-relative d-flex align-items-center justify-content-center">
                 <div class="row text-center">
                     <div class="col">
@@ -115,40 +94,26 @@
         </div>
     </section>
 
-    <section class="features-two position-relative" id="feature-two">
+    <section class="features-two position-relative" id="demo">
         <div class="container d-flex align-items-center position-relative">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-5 position-relative">
-                    <img class="section-img position-absolute top-50 translate-middle-y w-100" src="images/illustration-phones.svg" alt="">
-                </div>
-                <div class="col-md-6">
-                    <h3 class="content-title">State of the Art Infrastructure</h3>
-                    <p class="content">
-                        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-                    </p>
-                </div>
+                <video src="videos/Person Typing Fast.mp4" controls id="video"></video>
             </div>
-        </div>
-        <div class="section-img-bg position-absolute w-100 h-100 top-0 overflow-hidden">
-            <img class="position-absolute " src="images/bg-pattern-circles.svg" alt="">
         </div>
     </section>
 
-    <section class="features-three d-flex align-items-center position-relative" id="feature-three">
+    <section class="features-three d-flex align-items-center position-relative" id="register">
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="col-5 position-relative">
                     <img class="position-absolute top-50 translate-middle-y end-0" id="image" src="images/illustration-laptop-desktop.svg" alt="">
                 </div>
                 <article class="col-6 d-flex flex-column justify-content-center article">
-                    <div class="row">
-                        <h3 class="content-title">Free, open, simple</h3>
-                        <p class="content">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-                    </div>
-                    <div class="row">
-                        <h3 class="content-title">Powerful Tooling</h3>
-                        <p class="content">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
-                    </div>
+                    <h2 class="text-center">Sign up for our Newsletter</h2>
+                    <form action="https://www.freecodecamp.com/email-submit" class="d-flex flex-column gap-3" id="form">
+                        <input type="email" name="email" id="email" placeholder="youremail@example.com" class="pb-3">
+                        <input class="rounded-pill mx-auto" id="submit" type="submit" value="Submit">
+                    </form>
                 </article>
             </div>
         </div>
@@ -193,6 +158,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 </html>
