@@ -7,6 +7,7 @@ body{
 
 nav{
     z-index: 3;
+    background: linear-gradient(180deg, rgba(61, 64, 97, 0.43) 1.84%, rgba(61, 64, 97, 0) 98.16%);
 
     .navbar-brand{
         margin-right: 3em;
@@ -108,7 +109,7 @@ main{
 }
 
 .section-title{
-    // transform: translateY(-2em);
+    transform: translateY(3em);
 }
 
 .features-one,
@@ -148,6 +149,25 @@ main{
     }
 }
 
+#register{
+
+    article{
+
+        input[type="email"]{
+            border: none;
+            border-bottom: 1px solid $alt-darker;
+        }
+        input[type="submit"]{
+            background: $primary;
+            color: $white;
+            padding: .8em 3em;
+            font-weight: 700;
+            border: none;
+            width: min-content;
+        }
+    }
+}
+
 footer{
     background: $alt-darker;
     border-top-right-radius: 7em;
@@ -164,5 +184,11 @@ footer{
 
 
         color: $alt;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 10px;
     }
 }
